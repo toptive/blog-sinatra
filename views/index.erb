@@ -12,15 +12,16 @@
   <main class="mt-5 px-8">
     <h1 class="text-5xl">Posts</h1>
     <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-    <% @posts.each do |post| %>
-      <div class="border border-gray-800 rounded p-8">
-        <p><b>#<%= post.id %></b></p>
-        <h2 class="font-bold"><%= post.title %></h2>
-        <small><%= post.created_at %></small>
-        <div class="mt-4">
-          <p><%= post.content %></p>
+      <% @posts.each do |post| %>
+        <div class="border border-gray-800 rounded p-8">
+          <p><b>#<%= post.id %></b></p>
+          <h2 class="font-bold"><%= post.title %></h2>
+          <small><%= post.created_at %></small>
+          <div class="mt-4">
+            <p><%= post.content %></p>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
 </body>
 </html>
