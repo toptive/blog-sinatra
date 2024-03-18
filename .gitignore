@@ -30,3 +30,8 @@ manifest.yml
 .Spotlight-V100
 .Trashes
 *.db
+
+node_modules
+
+# tailwindcss ouput
+public/css/ouput.css
